@@ -1,0 +1,22 @@
+
+<div>
+    <h2>Demo Section</h2>
+    <p>{{ section.settings.demo_text }}</p>
+</div>
+
+{% schema %}
+    {
+        "name": "Demo Section",
+        "enabled_on": {
+            "templates": ["index", "product"]
+        },
+        "settings": [
+            {
+                "type": "text",
+                "id": "demo_text",
+                "label": "Demo Text",
+                "default": "This is a demo section."
+            }
+        ]
+    }
+{% endschema %}
